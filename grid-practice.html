@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .table{
+        display: grid;
+        grid-template-columns:100px  ;
+        margin-top: 20px;
+    }
+
+    .table1{
+        display: grid;
+        grid-template-columns:100px 100px;
+        margin-top: 20px;
+    }
+
+    .table2{
+        display: grid;
+        grid-template-columns:100px 100px 200px ;
+        margin-top: 20px;
+    }
+</style>
+<body style="padding-bottom:1000px;">
+
+<div class="table">
+    <div style="background-color: lightblue;">
+        div 1
+    </div>
+
+    <div style="background-color: pink;">
+        div 2
+    </div>
+
+    <div style="background-color:bisque;">
+        div 3
+    </div>
+</div> 
+
+<div class="table1">
+    <div style="background-color: lightblue;">
+        div 1
+    </div>
+
+    <div style="background-color: pink;">
+        div 2
+    </div>
+
+    <div style="background-color:bisque;">
+        div 3
+    </div>
+</div>  
+
+<div class="table2">
+    <div style="background-color: lightblue;">
+        100px 
+    </div>
+
+    <div style="background-color: pink;">
+       100px
+    </div>
+
+    <div style="background-color:bisque;">
+        200px
+    </div>
+</div>  
+
+<div Style="
+    display: grid;
+    grid-template-columns:100px 1fr;
+    margin-top: 20px;">
+    <div style="background-color: lightblue;">
+        div 1
+    </div>
+
+    <div style="background-color: pink;">
+         1fr means free space
+    </div>
+</div>
+
+<div Style="
+    display: grid;
+    grid-template-columns:100px 1fr 1fr;
+    margin-top: 20px;">
+    <div style="background-color: lightblue;">
+        div 1
+    </div>
+
+    <div style="background-color: pink;">
+         1fr
+    </div>
+
+    <div style="background-color: bisque;">
+         1fr 
+   </div>
+</div>
+
+<div Style="
+    display: grid;
+    grid-template-columns:100px 1fr 2fr;
+    margin-top: 20px;">
+    <div style="background-color: lightblue;">
+        div 1
+    </div>
+
+    <div style="background-color: pink;">
+         1fr
+    </div>
+
+    <div style="background-color: bisque;">
+         2fr 
+   </div>
+</div>
+
+
+<!-- Grid-box ** importanat -->
+
+<div Style="
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-top: 20px;
+    column-gap:20px;
+    row-gap:20px;">
+    <div style="background-color: lightblue; height:100px;">
+        1fr
+    </div>
+
+    <div style="background-color: pink; height:100px;">
+         1fr
+    </div>
+
+    <div style="background-color: bisque; height:100px;">
+         1fr 
+    </div>
+
+    <div style="background-color: bisque; height:100px;">
+         1fr
+    </div>
+
+    <div style="background-color: lightblue; height:100px;">
+         1fr
+    </div>
+
+    <div style="background-color: pink; height:100px;">
+         1fr 
+    </div>
+</div>
+
+
+</body>
+</html>
